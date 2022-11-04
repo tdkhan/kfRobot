@@ -2,6 +2,11 @@
 
 <launch>
 
+	<arg name="model" default="$(env TURTLEBOT3_MODEL)" doc="model type [burger, waffle, waffle_pi]"/>
+	<arg name="x_pos" default="-2.0"/>
+	<arg name="y_pos" default="-0.5"/>
+	<arg name="z_pos" default="0.0"/>
+
 	<!-- World File -->
 	<arg name="world_file" default="$(find sim_environment)/worlds/project_world.world"/>
 
@@ -13,5 +18,11 @@
 		<arg name="world_name" value="$(arg world_file)"/>
 
 	</include>
+
+	<!-- Robot Modelf File -->
+	<param name="robot_description" command="$(find xacro)/xacro --inorder $(find turtlebot3_description)/urdf/turtlebot3_$(arg model).urdf.xacro" />
+
+	<!-- Robot Spawn Node -->
+	<node pkg="gazebo_ros" type="spawn_model" name="spawn_urdf"  args="-urdf -model turtlebot3_$(arg model) -x $(arg x_pos) -y $(arg y_pos) -z $(arg z_pos) -param robot_description" />
 
 </launch>

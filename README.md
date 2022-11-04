@@ -3,10 +3,18 @@ This repsitory contains ROS packages for fusing IMU and camera data using a Kalm
 
 This code is developed with Ros Noetic and Gazebo 11.8.1. 
 
-## Running Instructions (Simulation Environment)
+## Package Dependencies
+The TurtleBot packages required for this simulation are the turtlbot3 and turtlebot3_msgs. In the src folder of your workspace clone the following packages
+```
+cd ~/<your_workspace>/src
+git clone https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git
+git clone https://github.com/ROBOTIS-GIT/turtlebot3.git
+```
+
+## Running Instructions (TurtleBot in Simulation Environment)
 Copy the package sim_environment in the src folder of your workspace form this repository. Then do:
 ```
-cd ~/your_workspace
+cd ~/<your_workspace>
 catkin_make
 ```
 
@@ -15,9 +23,17 @@ To source the catkin workspace:
 source devel/setup.bash
 ```
 
-To view the simulation environment for the robot:
+To run the TurtlBot in the simulation environment first set the environmental variable 'TURTLBOT3_MODEL' to 'waffle_pi' and then launch the world file
 ```
+export TURTLEBOT3_MODEL=waffle_pi
 roslaunch sim_environment world.launch
 ```
+
+To drive the TurtleBot in the world, launch the turtlebot3_teleop_key node
+```
+roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch 
+```
+
+Drive the robot in the world using your keyboard.
 
 

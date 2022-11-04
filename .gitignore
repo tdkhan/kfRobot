@@ -49,6 +49,9 @@ qtcreator-*
 
 # Catkin custom files
 CATKIN_IGNORE
-.catkin_workspace	
+.catkin_workspace 
 
 src/CMakeLists.txt
+
+# TurtleBot packages
+src/turtlebot3*
