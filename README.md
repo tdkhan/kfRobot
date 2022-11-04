@@ -11,7 +11,7 @@ git clone https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git
 git clone https://github.com/ROBOTIS-GIT/turtlebot3.git
 ```
 
-## Running Instructions (TurtleBot in Simulation Environment)
+## Run Instructions (TurtleBot in Simulation Environment)
 Copy the package sim_environment in the src folder of your workspace form this repository. Then do:
 ```
 cd ~/<your_workspace>
@@ -23,13 +23,13 @@ To source the catkin workspace:
 source devel/setup.bash
 ```
 
-To run the TurtlBot in the simulation environment first set the environmental variable 'TURTLBOT3_MODEL' to 'waffle_pi' and then launch the world file
+To run the TurtleBot in the simulation environment first set the environmental variable 'TURTLBOT3_MODEL' to 'waffle_pi' and then launch the world file
 ```
 export TURTLEBOT3_MODEL=waffle_pi
 roslaunch sim_environment world.launch
 ```
 
-To drive the TurtleBot in the world, launch the turtlebot3_teleop_key node
+To drive the TurtleBot in the world, launch the turtlebot3_teleop_key node in another terminal
 ```
 roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch 
 ```
