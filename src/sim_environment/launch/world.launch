@@ -2,6 +2,7 @@
 
 <launch>
 
+	<arg name="rviz" default="true"/>
 	<arg name="model" default="$(env TURTLEBOT3_MODEL)" doc="model type [burger, waffle, waffle_pi]"/>
 	<arg name="x_pos" default="-2.0"/>
 	<arg name="y_pos" default="-0.5"/>
@@ -19,8 +20,16 @@
 
 	</include>
 
-	<!-- Robot Modelf File -->
+	<!-- Robot Model File -->
 	<param name="robot_description" command="$(find xacro)/xacro --inorder $(find turtlebot3_description)/urdf/turtlebot3_$(arg model).urdf.xacro" />
+
+	<!-- Robot state publisher node: Publishes TF frames for usage in Rviz -->
+	<node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher" output="screen"/>
+
+	<!-- Rviz -->
+	<group if="$(arg rviz)">
+		<node name="rviz" pkg="rviz" type="rviz" args="-d $(find sim_environment)/config/turtlebot_data.rviz"/>
+	</group>
 
 	<!-- Robot Spawn Node -->
 	<node pkg="gazebo_ros" type="spawn_model" name="spawn_urdf"  args="-urdf -model turtlebot3_$(arg model) -x $(arg x_pos) -y $(arg y_pos) -z $(arg z_pos) -param robot_description" />
