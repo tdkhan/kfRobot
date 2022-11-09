@@ -23,8 +23,9 @@ To source the catkin workspace:
 source devel/setup.bash
 ```
 
-To run the TurtleBot in the simulation environment first set the environmental variable 'TURTLBOT3_MODEL' to 'waffle_pi' and then launch the world file
+To spawn the ArUco markers in scene make sure that 'GAZEBO_MODEL_PATH' is set to the models directory in the sim_environment pacakge. To run the TurtleBot in the simulation environment first set the environmental variable 'TURTLBOT3_MODEL' to 'waffle_pi' and then launch the world file
 ```
+export GAZEBO_MODEL_PATH=<path to your workspace>/src/sim_environment/models
 export TURTLEBOT3_MODEL=waffle_pi
 roslaunch sim_environment world.launch
 ```
