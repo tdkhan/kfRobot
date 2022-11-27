@@ -4,6 +4,9 @@ material Marker
   {
     pass
     {
+      scene_blend alpha_blend
+      depth_write off
+
       texture_unit
       {
         texture marker.png
