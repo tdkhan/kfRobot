@@ -77,4 +77,7 @@
 		</node>
 	</group> 
 
+	<!-- Obstacle Avoidance -->
+	<node pkg="obstacle_avoidance" type="node.py" name="obstacle_avoidance_node" output="screen"/>
+
 </launch>
