@@ -2,9 +2,9 @@ import numpy as np
 from math import *
 
 class ExtendedKalmanFilter:
-    def __init__(self, _s, _P, _t, p_dev, l_dev, r_dev):
+    def __init__(self, _s, _P, _t, p_dev, l_dev):
         # Load noise scaling values
-        self.p_dev = p_dev
+        self.p_dev = np.array(p_dev)
         self.a_dev = l_dev
 
         # Dimension of state, lidar and radar measurements
@@ -12,8 +12,8 @@ class ExtendedKalmanFilter:
         self.z_a_dim = 2
 
         # Load in the initial state vector, uncertainty and time
-        self.s_k_k = _s
-        self.P_k_k = _P
+        self.s_k_k_min = _s
+        self.P_k_k_min = _P
         self.t = _t
 
     # State transition matrix, 3 dimensional identity matrix
@@ -25,15 +25,16 @@ class ExtendedKalmanFilter:
 
     # Control to state matrix, maps (x_dot_local, yaw_dot) to (x_glob, y,glob, yaw)
     def B(self, s_k, dt):
-        B = np.array([[cos(s_k[2]), 0],
-                      [sin(s_k[2]), 0],
+        B = np.array([[cos(s_k[2])*dt, 0],
+                      [sin(s_k[2])*dt, 0],
                       [0, dt]])
 
         return B
 
     # Process noise for near-constant velocity model
     def Q(self, dt):
-        sigma = self.p_dev * np.eye(self.s_dim)
+        # Square the deviation vector to get variance then put on diagonal of Q
+        sigma = np.diag(self.p_dev * self.p_dev)
         Q = self.F(dt) @ sigma @ self.F(dt).T
 
         return Q
@@ -84,10 +85,13 @@ class ExtendedKalmanFilter:
             print("Sensor not found")
         
     # Prediction step of KF, prior distribution
-    def predict(self, t):
-        dt = t - self.t
-        self.s_k_k_min = self.F(dt) @ self.s_k_k
-        self.P_k_k_min = self.F(dt) @ self.P_k_k @ self.F(dt).T + self.Q(dt)
+    def predict(self, t, u_k):
+        duration = t - self.t
+        dt = duration.nsecs * 10**-9
+
+        self.s_k_k_min = self.F(dt) @ self.s_k_k_min + self.B(self.s_k_k_min, dt) @ u_k
+        self.P_k_k_min = self.F(dt) @ self.P_k_k_min @ self.F(dt).T + self.Q(dt)
+        self.t = t
 
     # Update step of KF, get posterior distribution, function of measurement and sensor
     def update(self, z, s):
@@ -98,6 +102,12 @@ class ExtendedKalmanFilter:
 
         self.s_k_k = self.s_k_k_min + K_k @ z_bar
         self.P_k_k = self.P_k_k_min - K_k @ self.H(self.s_k_k_min, s) @ self.P_k_k_min
+
+        self.s_k_k_min = self.s_k_k
+        self.P_k_k_min = self.P_k_k
+
+    def getPriorEst(self):
+        return self.s_k_k_min, self.P_k_k_min
 
     def getEst(self):
         return self.s_k_k, self.P_k_k
