@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <sdf version="1.6">
-  <model name="ArUco Marker 0">
+  <model name="ArUco Marker 1">
     <link name="link">
       <inertial>
         <pose>0 0 0 0 0 0</pose>
@@ -23,9 +23,9 @@
         </geometry>
         <material>
           <script>
-            <uri>model://AR01/materials/scripts</uri>
-            <uri>model://AR01/materials/textures</uri>
-            <name>Marker</name>
+            <uri>model://AR02/materials/scripts</uri>
+            <uri>model://AR02/materials/textures</uri>
+            <name>Marker1</name>
           </script>
         </material>
       </visual>

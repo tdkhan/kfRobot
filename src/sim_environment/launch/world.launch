@@ -3,10 +3,20 @@
 <launch>
 
 	<arg name="rviz" default="true"/>
-	<arg name="model" default="$(env TURTLEBOT3_MODEL)" doc="model type [burger, waffle, waffle_pi]"/>
+	<arg name="model" default="waffle_pi"/>
 	<arg name="x_pos" default="-2.0"/>
 	<arg name="y_pos" default="-0.5"/>
 	<arg name="z_pos" default="0.0"/>
+
+	<!-- namespace for camera input -->
+	<arg name="camera" default="/camera/rgb"/>
+	<arg name="image" default="image_raw"/>
+	<arg name="transport" default="compressed"/>
+	<arg name="fiducial_len" default="0.05"/>
+	<arg name="dictionary" default="16"/>
+	<arg name="do_pose_estimation" default="true"/>
+	<arg name="ignore_fiducials" default="" />
+	<arg name="fiducial_len_override" default="" />
 
 	<!-- World File -->
 	<arg name="world_file" default="$(find sim_environment)/worlds/project_world.world"/>
@@ -21,17 +31,50 @@
 	</include>
 
 	<!-- Robot Model File -->
-	<param name="robot_description" command="$(find xacro)/xacro --inorder $(find turtlebot3_description)/urdf/turtlebot3_$(arg model).urdf.xacro" />
+	<param name="robot_description" command="$(find xacro)/xacro --inorder $(find turtlebot3_description)/urdf/turtlebot3_$(arg model).urdf.xacro"/>
 
 	<!-- Robot state publisher node: Publishes TF frames for usage in Rviz -->
 	<node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher" output="screen"/>
 
+	<!-- Robot Spawn Node -->
+	<node pkg="gazebo_ros" type="spawn_model" name="spawn_urdf"  args="-urdf -model turtlebot3_$(arg model) -x $(arg x_pos) -y $(arg y_pos) -z $(arg z_pos) -param robot_description"/>
+
+	<!-- ArUco Detect Node 
+	<node name="aruco_detect" pkg="aruco_detect" type="aruco_detect" output="screen">
+	  <param name="image_transport" value="compressed"/>
+	  <param name="publish_images" value="true"/>
+	  <param name="fiducial_len" value="0.5"/>
+	  <param name="dictionary" value="0"/>
+	  <param name="do_pose_estimation" value="true"/>
+	  <param name="ignore_fiducials" value=""/>
+	  <param name="fiducial_len_override" value=""/>
+	  <param name="doCornerRefinement" value="True"/>
+	  <remap from="/camera_info" to="/camera/rgb/camera_info"/>
+	  <remap from="/camera/compressed" to="/camera/rgb/image_raw/compressed"/>
+	</node>-->
+
+	<node pkg="aruco_detect" name="aruco_detect"
+	    type="aruco_detect" output="screen" respawn="false">
+	    <param name="image_transport" value="$(arg transport)"/>
+	    <param name="publish_images" value="true" />
+	    <param name="fiducial_len" value="$(arg fiducial_len)"/>
+	    <param name="dictionary" value="$(arg dictionary)"/>
+	    <param name="do_pose_estimation" value="$(arg do_pose_estimation)"/>
+	    <param name="ignore_fiducials" value="$(arg ignore_fiducials)"/>
+	    <param name="fiducial_len_override" value="$(arg fiducial_len_override)"/>
+	    <param name="adaptiveThreshWinSizeMax" value="50"/>
+	  	<param name="adaptiveThreshWinSizeMin" value="10"/>
+	  	<param name="adaptiveThreshWinSizeStep" value="8"/>
+	    <remap from="/camera/compressed" 
+	        to="$(arg camera)/$(arg image)/$(arg transport)"/>
+	    <remap from="/camera_info" to="$(arg camera)/camera_info"/>
+    </node>
+
 	<!-- Rviz -->
 	<group if="$(arg rviz)">
-		<node name="rviz" pkg="rviz" type="rviz" args="-d $(find sim_environment)/config/turtlebot_data.rviz"/>
-	</group>
-
-	<!-- Robot Spawn Node -->
-	<node pkg="gazebo_ros" type="spawn_model" name="spawn_urdf"  args="-urdf -model turtlebot3_$(arg model) -x $(arg x_pos) -y $(arg y_pos) -z $(arg z_pos) -param robot_description" />
+		<node name="rviz" pkg="rviz" type="rviz" args="-d $(find sim_environment)/config/turtlebot_data.rviz">
+			<remap from="/camera_info" to="/camera/rgb/camera_info"/>
+		</node>
+	</group> 
 
 </launch>
