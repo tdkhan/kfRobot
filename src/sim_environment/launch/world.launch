@@ -3,12 +3,14 @@
 <launch>
 
 	<!-- arguments for robot spawn -->
-	<arg name="rviz" default="true"/>
 	<arg name="model" default="waffle_pi"/>
 	<arg name="x_pos" default="0"/>
 	<arg name="y_pos" default="0"/>
 	<arg name="z_pos" default="0.0"/>
 
+	<arg name="obstacle_avoidance" default="false" />
+	<arg name="rviz" default="true"/>
+	
 	<!-- namespace for camera input -->
 	<arg name="camera" default="/camera/rgb"/>
 	<arg name="image" default="image_raw"/>
@@ -65,6 +67,8 @@
 	</group> 
 
 	<!-- Obstacle Avoidance -->
-	<node pkg="obstacle_avoidance" type="node.py" name="obstacle_avoidance_node" output="screen"/>
+	<group if="$(arg obstacle_avoidance)">
+		<node pkg="obstacle_avoidance" type="node.py" name="obstacle_avoidance_node" output="screen"/>
+	</group>
 
 </launch>
