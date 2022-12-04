@@ -1,0 +1,18 @@
+material Marker12
+{
+  technique
+  {
+    pass
+    {
+      scene_blend alpha_blend
+      depth_write off
+
+      texture_unit
+      {
+        texture marker12.png
+        filtering anisotropic
+        max_anisotropy 16
+      }
+    }
+  }
+}

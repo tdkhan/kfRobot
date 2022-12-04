@@ -1439,18 +1439,218 @@
       <pose>8.77356 -8.13059 0 0 -0 0</pose>
     </model>
     <state world_name='default'>
-      <sim_time>522 582000000</sim_time>
-      <real_time>50 81460067</real_time>
-      <wall_time>1667707865 653055579</wall_time>
-      <iterations>49879</iterations>
-      <model name='ArUco Marker 01'>
-        <pose>-8.97512 -0.171142 0.499993 6e-06 -0 3e-06</pose>
+      <sim_time>2341 16000000</sim_time>
+      <real_time>2224 688091079</real_time>
+      <wall_time>1670133804 291645268</wall_time>
+      <iterations>1818434</iterations>
+      <model name='ArUco Marker 0'>
+        <pose>-9 -6.6027 0.5 3e-06 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>-8.97512 -0.171142 0.499993 6e-06 -0 3e-06</pose>
+          <pose>-9 -6.6027 0.5 3e-06 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0.000346 3.55793 -6.18766 -0.960456 0.001145 0.000303</acceleration>
-          <wrench>0 0.003558 -0.006188 0 -0 0</wrench>
+          <acceleration>-0.002724 -4.78342 17.6425 -2.61417 -0.004221 0.000873</acceleration>
+          <wrench>-3e-06 -0.004783 0.017643 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='ArUco Marker 1'>
+        <pose>-9 -2.43358 0.5 3e-06 0 4e-06</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-9 -2.43358 0.5 3e-06 0 4e-06</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>-0.002705 -4.78343 17.6426 -2.61416 -0.004213 0.000862</acceleration>
+          <wrench>-3e-06 -0.004783 0.017643 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='ArUco Marker 10'>
+        <pose>9.68324 2.85356 0.5 -3e-06 -0 3.13999</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>9.68324 2.85356 0.5 -3e-06 -0 3.13999</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>-0.0049 -4.78337 17.6426 -2.61421 0.000299 0.002978</acceleration>
+          <wrench>-5e-06 -0.004783 0.017643 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='ArUco Marker 11'>
+        <pose>9.68324 -1.38058 0.5 -3e-06 -0 3.13999</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>9.68324 -1.38058 0.5 -3e-06 -0 3.13999</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>-0.004931 -4.78339 17.6426 -2.61418 0.000279 0.002991</acceleration>
+          <wrench>-5e-06 -0.004783 0.017643 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='ArUco Marker 12'>
+        <pose>7.08134 -2.855 0.5 3e-06 -0 1.56997</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>7.08134 -2.855 0.5 3e-06 -0 1.56997</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>4.78344 -0.001224 17.6426 0.010101 -1.30706 0.002153</acceleration>
+          <wrench>0.004783 -1e-06 0.017643 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='ArUco Marker 13'>
+        <pose>5.23 0.869286 0.5 3e-06 0 3.13999</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>5.23 0.869286 0.5 3e-06 0 3.13999</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0.010395 4.78336 17.6426 2.61425 0.009361 0.003552</acceleration>
+          <wrench>1e-05 0.004783 0.017643 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='ArUco Marker 14'>
+        <pose>4.23567 -8.47 0.5 3e-06 -0 1.56996</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>4.23567 -8.47 0.5 3e-06 -0 1.56996</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>4.78342 -0.006729 17.6426 0.026946 -1.30709 0.00379</acceleration>
+          <wrench>0.004783 -7e-06 0.017643 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='ArUco Marker 15'>
+        <pose>9.68324 -5.61203 0.499993 -6e-06 -0 3.14</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>9.68324 -5.61203 0.499993 -6e-06 -0 3.14</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0.006027 3.5579 -6.18769 -0.960415 0.00243 -0.000981</acceleration>
+          <wrench>6e-06 0.003558 -0.006188 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='ArUco Marker 16'>
+        <pose>1.20916 -6.0305 0.5 -3e-06 -0 4e-06</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>1.20916 -6.0305 0.5 -3e-06 -0 4e-06</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>-0.002746 4.78343 17.6426 2.61415 -0.004229 -0.000888</acceleration>
+          <wrench>-3e-06 0.004783 0.017643 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='ArUco Marker 17'>
+        <pose>6.14084 -3.05 0.5 3e-06 -0 -1.56994</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>6.14084 -3.05 0.5 3e-06 -0 -1.56994</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>-4.78341 -0.006785 17.6426 0.029584 1.30711 -0.002639</acceleration>
+          <wrench>-0.004783 -7e-06 0.017643 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='ArUco Marker 18'>
+        <pose>5.72798 1.38 0.5 -3e-06 -0 1.56997</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>5.72798 1.38 0.5 -3e-06 -0 1.56997</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>-4.78342 0.006659 17.6426 -0.026612 1.30709 0.003732</acceleration>
+          <wrench>-0.004783 7e-06 0.017643 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='ArUco Marker 19'>
+        <pose>-9 6.03583 0.5 -3e-06 -0 4e-06</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-9 6.03583 0.5 -3e-06 -0 4e-06</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>-0.002743 4.78343 17.6426 2.61415 -0.004229 -0.000884</acceleration>
+          <wrench>-3e-06 0.004783 0.017643 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='ArUco Marker 2'>
+        <pose>-9 0.600883 0.5 3e-06 0 4e-06</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-9 0.600883 0.5 3e-06 0 4e-06</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>-0.002705 -4.78343 17.6426 -2.61416 -0.004697 0.000377</acceleration>
+          <wrench>-3e-06 -0.004783 0.017643 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='ArUco Marker 20'>
+        <pose>-2.65 3.73864 0.5 3e-06 0 3.13997</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-2.65 3.73864 0.5 3e-06 0 3.13997</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0.005006 4.78338 17.6426 2.61419 -0.000244 0.003031</acceleration>
+          <wrench>5e-06 0.004783 0.017643 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='ArUco Marker 3'>
+        <pose>-4.58408 6.7 0.5 3e-06 -0 -1.56993</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-4.58408 6.7 0.5 3e-06 -0 -1.56993</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>-4.78341 -0.006847 17.6426 0.027491 1.3071 -0.003873</acceleration>
+          <wrench>-0.004783 -7e-06 0.017643 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='ArUco Marker 4'>
+        <pose>-1.31296 -8.47 0.5 3e-06 -0 1.56996</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-1.31296 -8.47 0.5 3e-06 -0 1.56996</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>4.78341 -0.001245 17.6426 0.010207 -1.30709 0.002178</acceleration>
+          <wrench>0.004783 -1e-06 0.017643 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='ArUco Marker 5'>
+        <pose>-5.49648 -8.47 0.5 -3e-06 -0 1.56997</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-5.49648 -8.47 0.5 -3e-06 -0 1.56997</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>-4.78341 0.00668 17.6426 -0.026713 1.3071 0.003748</acceleration>
+          <wrench>-0.004783 7e-06 0.017643 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='ArUco Marker 6'>
+        <pose>1.0501 -5.60745 0.5 3e-06 -0 3.13998</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>1.0501 -5.60745 0.5 3e-06 -0 3.13998</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0.010433 4.78338 17.6427 2.61421 0.008196 0.004761</acceleration>
+          <wrench>1e-05 0.004783 0.017643 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='ArUco Marker 7'>
+        <pose>-2.45 4.66213 0.5 3e-06 0 4e-06</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-2.45 4.66213 0.5 3e-06 0 4e-06</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0.002747 -4.78343 17.6426 -2.61415 0.004235 -0.000883</acceleration>
+          <wrench>3e-06 -0.004783 0.017643 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='ArUco Marker 8'>
+        <pose>1.58425 6.7 0.5 3e-06 -0 -1.56994</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>1.58425 6.7 0.5 3e-06 -0 -1.56994</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>-4.78341 -0.006813 17.6426 0.027328 1.3071 -0.003846</acceleration>
+          <wrench>-0.004783 -7e-06 0.017643 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='ArUco Marker 9'>
+        <pose>6.02877 6.7 0.5 3e-06 -0 -1.56994</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>6.02877 6.7 0.5 3e-06 -0 -1.56994</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>-4.78341 -0.006796 17.6426 0.027254 1.3071 -0.003836</acceleration>
+          <wrench>-0.004783 -7e-06 0.017643 0 -0 0</wrench>
         </link>
       </model>
       <model name='Building'>
@@ -1500,20 +1700,20 @@
         </link>
       </model>
       <model name='Construction Barrel'>
-        <pose>0.111983 3.09518 -2e-06 1e-06 8e-06 -2.8e-05</pose>
+        <pose>0.11175 3.09495 0 0 0 -0.000228</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>0.111983 3.09518 -2e-06 1e-06 8e-06 -2.8e-05</pose>
+          <pose>0.11175 3.09495 0 0 0 -0.000228</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>3.10423 5.37636 -1.80852 -0.893292 1.48829 -0.000193</acceleration>
-          <wrench>1552.12 2688.18 -904.261 0 -0 0</wrench>
+          <acceleration>3.45974 5.74344 4.40597 1.34857 0.776039 3.14097</acceleration>
+          <wrench>1729.87 2871.72 2202.98 0 -0 0</wrench>
         </link>
       </model>
       <model name='Dumpster'>
-        <pose>-7.35198 4.4755 0.001369 -2e-06 0 0</pose>
+        <pose>-7.35198 4.4755 0.001376 2e-06 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>-7.35198 4.4755 0.001369 -2e-06 0 0</pose>
+          <pose>-7.35198 4.4755 0.001376 2e-06 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 -9.8 0 -0 0</acceleration>
           <wrench>0 0 -9.8 0 -0 0</wrench>
@@ -1530,13 +1730,13 @@
         </link>
       </model>
       <model name='cube_20k'>
-        <pose>5.72795 0.874466 -0 -0 -0 -3e-05</pose>
+        <pose>5.73504 0.869253 -0 0 1e-06 -0.000239</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>5.72795 0.874466 0.5 -0 -0 -3e-05</pose>
+          <pose>5.73504 0.869254 0.5 0 1e-06 -0.000239</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>-1.07556 -0.034241 0.19878 -3.07101 -0.991636 -3.13739</acceleration>
-          <wrench>-1.07556 -0.034241 0.19878 0 -0 0</wrench>
+          <acceleration>1.07557 0.034016 -0.19878 3.07145 0.991621 3.13739</acceleration>
+          <wrench>1.07557 0.034016 -0.19878 0 -0 0</wrench>
         </link>
       </model>
       <model name='ground_plane'>
@@ -1565,12 +1765,12 @@
     </state>
     <gui fullscreen='0'>
       <camera name='user_camera'>
-        <pose>-27.3683 -3.61329 21.0618 0 0.603645 0.036211</pose>
+        <pose>-13.3845 -1.38516 12.774 -0 0.817801 -0.000964</pose>
         <view_controller>orbit</view_controller>
         <projection_type>perspective</projection_type>
       </camera>
     </gui>
-    <model name='ArUco Marker 01'>
+    <model name='ArUco Marker 0'>
       <link name='link'>
         <inertial>
           <pose>0 0 0 0 -0 0</pose>
@@ -1593,9 +1793,9 @@
           </geometry>
           <material>
             <script>
-              <uri>model://AR01/materials/scripts</uri>
-              <uri>model://AR01/materials/textures</uri>
-              <name>Marker</name>
+              <uri>model://AR00/materials/scripts</uri>
+              <uri>model://AR00/materials/textures</uri>
+              <name>Marker0</name>
             </script>
           </material>
         </visual>
@@ -1632,7 +1832,1287 @@
         <enable_wind>0</enable_wind>
         <kinematic>0</kinematic>
       </link>
-      <pose>-8.46879 -3.15375 0 0 -0 0</pose>
+      <pose>-8.91981 -7.21235 0 0 -0 0</pose>
+    </model>
+    <model name='ArUco Marker 1'>
+      <link name='link'>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <mass>0.001</mass>
+          <inertia>
+            <ixx>3.75e-06</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1.875e-06</iyy>
+            <iyz>0</iyz>
+            <izz>1.875e-06</izz>
+          </inertia>
+        </inertial>
+        <visual name='front_visual'>
+          <pose>5e-05 0 0 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.0001 1 1</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://AR01/materials/scripts</uri>
+              <uri>model://AR01/materials/textures</uri>
+              <name>Marker1</name>
+            </script>
+          </material>
+        </visual>
+        <visual name='rear_visual'>
+          <pose>-5e-05 0 0 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.0001 1 1</size>
+            </box>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.0001 1 1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>-8.92583 -2.43308 0 0 -0 0</pose>
+    </model>
+    <model name='ArUco Marker 2'>
+      <link name='link'>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <mass>0.001</mass>
+          <inertia>
+            <ixx>3.75e-06</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1.875e-06</iyy>
+            <iyz>0</iyz>
+            <izz>1.875e-06</izz>
+          </inertia>
+        </inertial>
+        <visual name='front_visual'>
+          <pose>5e-05 0 0 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.0001 1 1</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://AR02/materials/scripts</uri>
+              <uri>model://AR02/materials/textures</uri>
+              <name>Marker2</name>
+            </script>
+          </material>
+        </visual>
+        <visual name='rear_visual'>
+          <pose>-5e-05 0 0 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.0001 1 1</size>
+            </box>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.0001 1 1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>-8.8856 0.601319 0 0 -0 0</pose>
+    </model>
+    <model name='ArUco Marker 3'>
+      <link name='link'>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <mass>0.001</mass>
+          <inertia>
+            <ixx>3.75e-06</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1.875e-06</iyy>
+            <iyz>0</iyz>
+            <izz>1.875e-06</izz>
+          </inertia>
+        </inertial>
+        <visual name='front_visual'>
+          <pose>5e-05 0 0 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.0001 1 1</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://AR03/materials/scripts</uri>
+              <uri>model://AR03/materials/textures</uri>
+              <name>Marker3</name>
+            </script>
+          </material>
+        </visual>
+        <visual name='rear_visual'>
+          <pose>-5e-05 0 0 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.0001 1 1</size>
+            </box>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.0001 1 1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>-4.87904 5.66397 0 0 -0 0</pose>
+    </model>
+    <model name='ArUco Marker 4'>
+      <link name='link'>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <mass>0.001</mass>
+          <inertia>
+            <ixx>3.75e-06</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1.875e-06</iyy>
+            <iyz>0</iyz>
+            <izz>1.875e-06</izz>
+          </inertia>
+        </inertial>
+        <visual name='front_visual'>
+          <pose>5e-05 0 0 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.0001 1 1</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://AR04/materials/scripts</uri>
+              <uri>model://AR04/materials/textures</uri>
+              <name>Marker4</name>
+            </script>
+          </material>
+        </visual>
+        <visual name='rear_visual'>
+          <pose>-5e-05 0 0 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.0001 1 1</size>
+            </box>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.0001 1 1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>-1.31296 -7.41228 0 0 -0 0</pose>
+    </model>
+    <model name='ArUco Marker 5'>
+      <link name='link'>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <mass>0.001</mass>
+          <inertia>
+            <ixx>3.75e-06</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1.875e-06</iyy>
+            <iyz>0</iyz>
+            <izz>1.875e-06</izz>
+          </inertia>
+        </inertial>
+        <visual name='front_visual'>
+          <pose>5e-05 0 0 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.0001 1 1</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://AR05/materials/scripts</uri>
+              <uri>model://AR05/materials/textures</uri>
+              <name>Marker5</name>
+            </script>
+          </material>
+        </visual>
+        <visual name='rear_visual'>
+          <pose>-5e-05 0 0 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.0001 1 1</size>
+            </box>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.0001 1 1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>-5.49648 -7.53764 0 0 -0 0</pose>
+    </model>
+    <model name='ArUco Marker 6'>
+      <link name='link'>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <mass>0.001</mass>
+          <inertia>
+            <ixx>3.75e-06</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1.875e-06</iyy>
+            <iyz>0</iyz>
+            <izz>1.875e-06</izz>
+          </inertia>
+        </inertial>
+        <visual name='front_visual'>
+          <pose>5e-05 0 0 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.0001 1 1</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://AR06/materials/scripts</uri>
+              <uri>model://AR06/materials/textures</uri>
+              <name>Marker6</name>
+            </script>
+          </material>
+        </visual>
+        <visual name='rear_visual'>
+          <pose>-5e-05 0 0 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.0001 1 1</size>
+            </box>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.0001 1 1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>0.710597 -5.05647 0 0 -0 0</pose>
+    </model>
+    <model name='ArUco Marker 8'>
+      <link name='link'>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <mass>0.001</mass>
+          <inertia>
+            <ixx>3.75e-06</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1.875e-06</iyy>
+            <iyz>0</iyz>
+            <izz>1.875e-06</izz>
+          </inertia>
+        </inertial>
+        <visual name='front_visual'>
+          <pose>5e-05 0 0 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.0001 1 1</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://AR08/materials/scripts</uri>
+              <uri>model://AR08/materials/textures</uri>
+              <name>Marker8</name>
+            </script>
+          </material>
+        </visual>
+        <visual name='rear_visual'>
+          <pose>-5e-05 0 0 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.0001 1 1</size>
+            </box>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.0001 1 1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>1.58414 6.03979 0 0 -0 0</pose>
+    </model>
+    <model name='ArUco Marker 9'>
+      <link name='link'>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <mass>0.001</mass>
+          <inertia>
+            <ixx>3.75e-06</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1.875e-06</iyy>
+            <iyz>0</iyz>
+            <izz>1.875e-06</izz>
+          </inertia>
+        </inertial>
+        <visual name='front_visual'>
+          <pose>5e-05 0 0 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.0001 1 1</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://AR09/materials/scripts</uri>
+              <uri>model://AR09/materials/textures</uri>
+              <name>Marker9</name>
+            </script>
+          </material>
+        </visual>
+        <visual name='rear_visual'>
+          <pose>-5e-05 0 0 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.0001 1 1</size>
+            </box>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.0001 1 1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>6.02873 6.07973 0 0 -0 0</pose>
+    </model>
+    <model name='ArUco Marker 10'>
+      <link name='link'>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <mass>0.001</mass>
+          <inertia>
+            <ixx>3.75e-06</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1.875e-06</iyy>
+            <iyz>0</iyz>
+            <izz>1.875e-06</izz>
+          </inertia>
+        </inertial>
+        <visual name='front_visual'>
+          <pose>5e-05 0 0 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.0001 1 1</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://AR10/materials/scripts</uri>
+              <uri>model://AR10/materials/textures</uri>
+              <name>Marker10</name>
+            </script>
+          </material>
+        </visual>
+        <visual name='rear_visual'>
+          <pose>-5e-05 0 0 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.0001 1 1</size>
+            </box>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.0001 1 1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>9.59703 2.85391 0 0 -0 0</pose>
+    </model>
+    <model name='ArUco Marker 11'>
+      <link name='link'>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <mass>0.001</mass>
+          <inertia>
+            <ixx>3.75e-06</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1.875e-06</iyy>
+            <iyz>0</iyz>
+            <izz>1.875e-06</izz>
+          </inertia>
+        </inertial>
+        <visual name='front_visual'>
+          <pose>5e-05 0 0 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.0001 1 1</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://AR11/materials/scripts</uri>
+              <uri>model://AR11/materials/textures</uri>
+              <name>Marker11</name>
+            </script>
+          </material>
+        </visual>
+        <visual name='rear_visual'>
+          <pose>-5e-05 0 0 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.0001 1 1</size>
+            </box>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.0001 1 1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>9.58653 -1.74121 0 0 -0 0</pose>
+    </model>
+    <model name='ArUco Marker 12'>
+      <link name='link'>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <mass>0.001</mass>
+          <inertia>
+            <ixx>3.75e-06</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1.875e-06</iyy>
+            <iyz>0</iyz>
+            <izz>1.875e-06</izz>
+          </inertia>
+        </inertial>
+        <visual name='front_visual'>
+          <pose>5e-05 0 0 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.0001 1 1</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://AR12/materials/scripts</uri>
+              <uri>model://AR12/materials/textures</uri>
+              <name>Marker12</name>
+            </script>
+          </material>
+        </visual>
+        <visual name='rear_visual'>
+          <pose>-5e-05 0 0 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.0001 1 1</size>
+            </box>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.0001 1 1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>7.08127 -2.15233 0 0 -0 0</pose>
+    </model>
+    <model name='ArUco Marker 13'>
+      <link name='link'>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <mass>0.001</mass>
+          <inertia>
+            <ixx>3.75e-06</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1.875e-06</iyy>
+            <iyz>0</iyz>
+            <izz>1.875e-06</izz>
+          </inertia>
+        </inertial>
+        <visual name='front_visual'>
+          <pose>5e-05 0 0 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.0001 1 1</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://AR13/materials/scripts</uri>
+              <uri>model://AR13/materials/textures</uri>
+              <name>Marker13</name>
+            </script>
+          </material>
+        </visual>
+        <visual name='rear_visual'>
+          <pose>-5e-05 0 0 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.0001 1 1</size>
+            </box>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.0001 1 1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>4.91186 0.852756 0 0 -0 0</pose>
+    </model>
+    <model name='ArUco Marker 14'>
+      <link name='link'>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <mass>0.001</mass>
+          <inertia>
+            <ixx>3.75e-06</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1.875e-06</iyy>
+            <iyz>0</iyz>
+            <izz>1.875e-06</izz>
+          </inertia>
+        </inertial>
+        <visual name='front_visual'>
+          <pose>5e-05 0 0 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.0001 1 1</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://AR14/materials/scripts</uri>
+              <uri>model://AR14/materials/textures</uri>
+              <name>Marker14</name>
+            </script>
+          </material>
+        </visual>
+        <visual name='rear_visual'>
+          <pose>-5e-05 0 0 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.0001 1 1</size>
+            </box>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.0001 1 1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>4.23566 -7.66423 0 0 -0 0</pose>
+    </model>
+    <model name='ArUco Marker 15'>
+      <link name='link'>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <mass>0.001</mass>
+          <inertia>
+            <ixx>3.75e-06</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1.875e-06</iyy>
+            <iyz>0</iyz>
+            <izz>1.875e-06</izz>
+          </inertia>
+        </inertial>
+        <visual name='front_visual'>
+          <pose>5e-05 0 0 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.0001 1 1</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://AR15/materials/scripts</uri>
+              <uri>model://AR15/materials/textures</uri>
+              <name>Marker15</name>
+            </script>
+          </material>
+        </visual>
+        <visual name='rear_visual'>
+          <pose>-5e-05 0 0 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.0001 1 1</size>
+            </box>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.0001 1 1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>9.53047 -5.6004 0 0 -0 0</pose>
+    </model>
+    <model name='ArUco Marker 17'>
+      <link name='link'>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <mass>0.001</mass>
+          <inertia>
+            <ixx>3.75e-06</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1.875e-06</iyy>
+            <iyz>0</iyz>
+            <izz>1.875e-06</izz>
+          </inertia>
+        </inertial>
+        <visual name='front_visual'>
+          <pose>5e-05 0 0 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.0001 1 1</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://AR17/materials/scripts</uri>
+              <uri>model://AR17/materials/textures</uri>
+              <name>Marker17</name>
+            </script>
+          </material>
+        </visual>
+        <visual name='rear_visual'>
+          <pose>-5e-05 0 0 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.0001 1 1</size>
+            </box>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.0001 1 1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>6.14074 -3.7231 0 0 -0 0</pose>
+    </model>
+    <model name='ArUco Marker 18'>
+      <link name='link'>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <mass>0.001</mass>
+          <inertia>
+            <ixx>3.75e-06</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1.875e-06</iyy>
+            <iyz>0</iyz>
+            <izz>1.875e-06</izz>
+          </inertia>
+        </inertial>
+        <visual name='front_visual'>
+          <pose>5e-05 0 0 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.0001 1 1</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://AR18/materials/scripts</uri>
+              <uri>model://AR18/materials/textures</uri>
+              <name>Marker18</name>
+            </script>
+          </material>
+        </visual>
+        <visual name='rear_visual'>
+          <pose>-5e-05 0 0 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.0001 1 1</size>
+            </box>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.0001 1 1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>5.90564 2.12018 0 0 -0 0</pose>
+    </model>
+    <model name='ArUco Marker 19'>
+      <link name='link'>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <mass>0.001</mass>
+          <inertia>
+            <ixx>3.75e-06</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1.875e-06</iyy>
+            <iyz>0</iyz>
+            <izz>1.875e-06</izz>
+          </inertia>
+        </inertial>
+        <visual name='front_visual'>
+          <pose>5e-05 0 0 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.0001 1 1</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://AR19/materials/scripts</uri>
+              <uri>model://AR19/materials/textures</uri>
+              <name>Marker19</name>
+            </script>
+          </material>
+        </visual>
+        <visual name='rear_visual'>
+          <pose>-5e-05 0 0 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.0001 1 1</size>
+            </box>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.0001 1 1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>-8.63868 6.03616 0 0 -0 0</pose>
+    </model>
+    <model name='ArUco Marker 20'>
+      <link name='link'>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <mass>0.001</mass>
+          <inertia>
+            <ixx>3.75e-06</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1.875e-06</iyy>
+            <iyz>0</iyz>
+            <izz>1.875e-06</izz>
+          </inertia>
+        </inertial>
+        <visual name='front_visual'>
+          <pose>5e-05 0 0 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.0001 1 1</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://AR20/materials/scripts</uri>
+              <uri>model://AR20/materials/textures</uri>
+              <name>Marker20</name>
+            </script>
+          </material>
+        </visual>
+        <visual name='rear_visual'>
+          <pose>-5e-05 0 0 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.0001 1 1</size>
+            </box>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.0001 1 1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>-2.72642 3.73892 0 0 -0 0</pose>
+    </model>
+    <model name='ArUco Marker 16'>
+      <link name='link'>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <mass>0.001</mass>
+          <inertia>
+            <ixx>3.75e-06</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1.875e-06</iyy>
+            <iyz>0</iyz>
+            <izz>1.875e-06</izz>
+          </inertia>
+        </inertial>
+        <visual name='front_visual'>
+          <pose>5e-05 0 0 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.0001 1 1</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://AR16/materials/scripts</uri>
+              <uri>model://AR16/materials/textures</uri>
+              <name>Marker16</name>
+            </script>
+          </material>
+        </visual>
+        <visual name='rear_visual'>
+          <pose>-5e-05 0 0 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.0001 1 1</size>
+            </box>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.0001 1 1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>1.31816 -6.03506 0 0 -0 0</pose>
+    </model>
+    <model name='ArUco Marker 7'>
+      <link name='link'>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <mass>0.001</mass>
+          <inertia>
+            <ixx>3.75e-06</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1.875e-06</iyy>
+            <iyz>0</iyz>
+            <izz>1.875e-06</izz>
+          </inertia>
+        </inertial>
+        <visual name='front_visual'>
+          <pose>5e-05 0 0 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.0001 1 1</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://AR07/materials/scripts</uri>
+              <uri>model://AR07/materials/textures</uri>
+              <name>Marker7</name>
+            </script>
+          </material>
+        </visual>
+        <visual name='rear_visual'>
+          <pose>-5e-05 0 0 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.0001 1 1</size>
+            </box>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.0001 1 1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>-2.35799 4.66244 0 0 -0 0</pose>
     </model>
   </world>
 </sdf>
