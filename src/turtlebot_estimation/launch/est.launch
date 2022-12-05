@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<launch>
+
+	<!-- Estimation Node -->
+	<node pkg="turtlebot_estimation" type="estimation_node.py" name="estimation_node" output="screen"/>
+
+    <!-- Aruco Transforms to Measurement conversion node -->
+	<node pkg="turtlebot_estimation" type="aruco_pose_node.py" name="aruco_pose_node" output="screen"/>
+
+</launch>
