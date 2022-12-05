@@ -24,9 +24,6 @@ class ExtendedKalmanFilter:
 
     # Control to state matrix, maps (x_dot_local) to (x_glob, y_glob, yaw)
     def Bu(self, s_k, dt):
-        B = np.array([[cos(s_k[2])*dt],
-                      [sin(s_k[2])*dt],
-                      [0]])
         B = np.array([cos(s_k[2])*dt,
                       sin(s_k[2])*dt,
                       0])

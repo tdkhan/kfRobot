@@ -48,7 +48,7 @@ class EstimationNode:
         s_init = np.array([random.uniform(-30, 30),
                            random.uniform(-30, 30), 
                            random.uniform(0, 2*pi)])
-        P_init = np.diag([0.5, 0.5, pi/6])
+        P_init = np.diag([20.0, 20.0, 2*pi])
         t_init = rospy.Time.now()
 
         # Set initial state to ground truth location for debugging
@@ -102,6 +102,7 @@ class EstimationNode:
 
             self.ekf.predict(t, self.u_k, ui_k)
 
+    # Callback for aruco marker measurements from aruco pose node
     def arucoCb(self, msg):
         # Wait until we are initialized
         if self.initialized:

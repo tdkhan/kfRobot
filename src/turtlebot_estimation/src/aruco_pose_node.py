@@ -11,9 +11,9 @@ class ArucoToPoseNode:
     def __init__(self):
         
         # Standard deviation scaling values for aruco detection pose (distance, radial, yaw)
-        self.aruco_dev = np.array([0.01, 0.07, 0.0005])
+        self.aruco_dev = np.array([0.01, 0.07, 0.001])
         self.min_aruco_range = 0.1
-        self.max_aruco_range = 10.0
+        self.max_aruco_range = 6.0
 
         # Input fiducial transforms
         rospy.Subscriber("/fiducial_transforms", FiducialTransformArray, self.arucoCb)
