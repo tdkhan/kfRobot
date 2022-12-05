@@ -22,10 +22,21 @@ class ExtendedKalmanFilter:
 
         return F
 
-    # Control to state matrix, maps (x_dot_local, yaw_dot) to (x_glob, y_glob, yaw)
-    def B(self, s_k, dt):
-        B = np.array([[cos(s_k[2])*dt, 0],
-                      [sin(s_k[2])*dt, 0],
+    # Control to state matrix, maps (x_dot_local) to (x_glob, y_glob, yaw)
+    def Bu(self, s_k, dt):
+        B = np.array([[cos(s_k[2])*dt],
+                      [sin(s_k[2])*dt],
+                      [0]])
+        B = np.array([cos(s_k[2])*dt,
+                      sin(s_k[2])*dt,
+                      0])
+
+        return B
+
+    # IMU to state matrix, maps (x_dot_dot_local, yaw_dot) to (x_glob, y_glob, yaw)
+    def Bi(self, s_k, dt):
+        B = np.array([[(1/2)*cos(s_k[2])*dt**2, 0],
+                      [(1/2)*sin(s_k[2])*dt**2, 0],
                       [0, dt]])
 
         return B
@@ -71,11 +82,13 @@ class ExtendedKalmanFilter:
             print("Sensor not found")
         
     # Prediction step of KF, prior distribution
-    def predict(self, t, u_k):
+    def predict(self, t, u_k, ui_k):
         duration = t - self.t
         dt = duration.nsecs * 10**-9
 
-        self.s_k_k_min = self.F(dt) @ self.s_k_k_min + self.B(self.s_k_k_min, dt) @ u_k
+        # print(np.shape(self.Bu(self.s_k_k_min, dt)), np.shape(u_k[0]), np.shape(self.Bi(self.s_k_k_min, dt)), np.shape(ui_k))
+
+        self.s_k_k_min = self.F(dt) @ self.s_k_k_min + self.Bu(self.s_k_k_min, dt) * u_k[0] + self.Bi(self.s_k_k_min, dt) @ ui_k
         self.P_k_k_min = self.F(dt) @ self.P_k_k_min @ self.F(dt).T + self.Q(dt)
         self.t = t
 

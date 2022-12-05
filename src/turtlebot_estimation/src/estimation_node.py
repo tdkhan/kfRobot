@@ -34,9 +34,8 @@ class EstimationNode:
         # Timer for publishing estimate at 10 Hz
         self.est_pub_timer = rospy.Timer(rospy.Duration(0.1), self.publishEstimateTimerCb)
 
-        # Run prediction step asynchronously once we get the first command
-        self.got_cmd = None
-        self.predict_timer = rospy.Timer(rospy.Duration(0.1), self.predictTimerCb)
+        # Wait until we get first control input to turtlebot to run kalman filter
+        self.got_cmd = False
 
         # Wait for first odometry (ground truth) callback before initializing filter
         self.got_ground_truth = False
@@ -56,7 +55,7 @@ class EstimationNode:
         # s_init = self.ground_truth_loc
 
         # Noise values (standard deviations of x, y, yaw)
-        process_deviation = [0.15, 0.15, pi/24]
+        process_deviation = [0.015, 0.015, pi/96]
 
         # Create new EKF class
         self.ekf = ExtendedKalmanFilter(s_init, P_init, t_init, 
@@ -85,11 +84,6 @@ class EstimationNode:
 
             self.est_odom_pub.publish(odom_msg)
 
-    # Run prediction step at 10 hz to account for slow command rate from teleop node
-    def predictTimerCb(self, event):
-        if self.initialized and self.got_cmd:
-            self.ekf.predict(rospy.Time.now(), self.u_k)
-
     # Run kalman predict step with new control input
     def controlCb(self, msg):
         # Wait until we are initialized
@@ -97,9 +91,16 @@ class EstimationNode:
             # Format msg into control vector
             self.u_k = np.array([msg.linear.x, msg.angular.z])
             self.got_cmd = True
-            
+    
+    # IMU callback, runs prediction step with IMU outputs and most current control input
     def imuCb(self, msg):
-        pass
+        if self.initialized and self.got_cmd:
+            t = msg.header.stamp
+            a = msg.linear_acceleration.x
+            w = msg.angular_velocity.z
+            ui_k = np.array([a, w])
+
+            self.ekf.predict(t, self.u_k, ui_k)
 
     def arucoCb(self, msg):
         # Wait until we are initialized
